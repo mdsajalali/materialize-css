@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Materialize CSS</title>
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <style>
+      * {
+        font-family: "Josefin Sans", sans-serif;
+      }
+
+      section{
+          width: 90%;
+          margin: auto;
+          margin-top: 120px;  
+      } 
+      
+    </style>
+  </head>
+  <body>
+    <!-- Header Stars -->
+    <nav class="blue lighten-1">
+      <div class="nav-wrapper container">
+        <a href="#!" class="brand-logo">Md. Sajal Ali</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="badges.html">Services</a></li>
+          <li><a href="collapsible.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="mobile.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="badges.html">Services</a></li>
+      <li><a href="collapsible.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="mobile.html">Contact</a></li>
+    </ul>
+
+      <!-- About me starts -->
+      <section>
+        <h2 class="center-align">About Us</h2>
+       
+
+            <div class="row">
+                <div class="col m6 s12">
+                    <img src="images/two.jpg" class="responsive-img">
+                </div>
+                <div class="col m6 s12">
+                    <h4>Who am i?</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum sequi incidunt itaque alias! Dolores assumenda ipsum nihil, iure adipisci numquam sint culpa, officiis laborum, aliquid minus. Eaque soluta odio dicta.</p>
+                    </div> <a href="about.html" class="btn waves-effect waves-ligh blue white-text">Know More</a>
+                </div>
+            </div>
+
+
+
+        
+    </section>
+
+    <!-- My degree -->
+    <section>
+        <h2 class="center-align">My College Degree</h2>
+        <div class="row">
+            <div class="col s4 m4 l4 offset-l4"> <hr> </div>
+        </div>
+        <div class="container">
+            <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+              </ul>
+        </div>
+    </section>
+    <!-- Header Ends -->
+
+   
+
+    <!-- footer starts -->
+ <footer class="page-footer blue">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2021 Md. Sajal Ali
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+ <!-- footer ends -->
+    <script>
+         $(document).ready(function () {
+        $(".sidenav").sidenav();
+
+        $('.collapsible').collapsible();
+        $('.modal').modal();
+    });
+    </script>
+ </body>
+ </html>
